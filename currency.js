@@ -80,7 +80,7 @@
     var observer = new MutationObserver(function(){
       update(localStorage.getItem("currency") || current);
     });
-    observer.observe(document.body, { childList:true, subtree:true });
+    observer.observe(document.getElementById("allrecords"), { childList:true });
 
     document.body.insertBefore(note, container.nextSibling);
     update(current);
