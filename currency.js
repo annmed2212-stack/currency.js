@@ -77,10 +77,10 @@
       }
     });
 
-    // var observer = new MutationObserver(function(){
-      // update(localStorage.getItem("currency") || current);
-    //});
-   // observer.observe(document.getElementById("allrecords"), { childList:true });
+  //  var observer = new MutationObserver(function(){
+  //    update(localStorage.getItem("currency") || current);
+  //  });
+  //  observer.observe(document.body, { childList:true, subtree:true });
 
     document.body.insertBefore(note, container.nextSibling);
     update(current);
@@ -95,6 +95,7 @@
     .js-currency-btn {
       margin-right:8px; padding:6px 10px; cursor:pointer;
       border:1px solid #ccc; background:#f8f8f8; border-radius:4px;
+      transition:all .2s ease;
     }
     .js-currency-btn.active{background:#333;color:#fff;}
     .js-currency-btn:hover{background:#ddd;}
